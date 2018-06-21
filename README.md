@@ -7,7 +7,8 @@ Author:		Tom van Wijk - RIVM Bilthoven<br />
 
 This pipeline is developed to analyse and compare amplicon sequencing
 datasets of bacterial populations sequenced using paired-end reads
-generated with illumina technology. Currently only 16S V4 is supported.<br />
+generated with illumina technology. Currently only the 16S V4 region
+and Illumina paired-end data are supported.<br />
 
 ### REQUIREMENTS
 
@@ -15,8 +16,9 @@ generated with illumina technology. Currently only 16S V4 is supported.<br />
 	**WARNING: Experiences when using different operating systems may vary.**
 -	python 2.7.x
 -	python libraries as listed in the import section of dada2_amplicon_pipeline.py
--	Bioconductor v3.6 or newer
--	R package dada 2
+-	R v3.4.2 of later
+-	Bioconductor v3.6 or later
+-	dada 2 (R package)
 
 
 ### INSTALLATION
@@ -42,8 +44,8 @@ Start the pipeline with the following command:
 			raw sequences of the forward and reverse reads.
 			For each sample, these fastq files need to be named with
 			an '_R1' or '_R2' tag respectively and  be furthermore identical.
-			The data is expected to be free of sequencing primers, adapters and filters
-			but trimming, quality filtering and phiX filtering is performed by the pipeline.
+			The data is expected to be free of primer-, barcode- and adapter sequences.
+			Trimming, quality filtering and phiX filtering is performed by the pipeline.
 
 -	**'outputdir':**	location of output directory.<br />
 			Default = subdirectory in inputdir
@@ -55,4 +57,4 @@ Start the pipeline with the following command:
 **WARNING: The parameters of the trimming step in classify_contigs.R
 might be finetuned for your specific dataset, especcially the truncLen parameter,
 which indicates at what position the forward and reverse reads should be trimmed
-may vary based on the size of the target region, and sequencing methods used.**
+may vary based on the size of the target region, and sequencing tech used.**
