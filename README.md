@@ -1,4 +1,4 @@
-# RIVM_amplicon_pipeline
+# DADA2_amplicon_pipeline
 
 **Licence:	GNU General Public License v3.0 (copy provided in directory)**<br />
 Author:		Tom van Wijk - RIVM Bilthoven<br />
@@ -42,6 +42,8 @@ Start the pipeline with the following command:
 			raw sequences of the forward and reverse reads.
 			For each sample, these fastq files need to be named with
 			an '_R1' or '_R2' tag respectively and  be furthermore identical.
+			The data is expected to be free of sequencing primers, adapters and filters
+			but trimming, quality filtering and phiX filtering is performed by the pipeline.
 
 -	**'outputdir':**	location of output directory.<br />
 			Default = subdirectory in inputdir
