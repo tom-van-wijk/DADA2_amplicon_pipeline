@@ -72,7 +72,7 @@ names(RR_files_filt) <- sample.RR_filenames
 # filtering and trimming the reads from FR_files to FR_files_filt
 # WARNING: THESE PARAMETERS AREN'T OPTIMAL FOR ALL DATASETS, please inform "README.MD"
 filterAndTrim(fwd=FR_files, filt=FR_files_filt,	rev=RR_files, filt.rev=RR_files_filt,
-			  truncLen=c(180,160), maxEE=2, truncQ=11, maxN=0, rm.phix=TRUE,
+			  truncLen=c(235,185), maxEE=2, truncQ=11, maxN=0, rm.phix=TRUE,
 			  compress=TRUE, verbose=TRUE, multithread=TRUE)
 
 # create quality rapport of filtered and trimmed input data
