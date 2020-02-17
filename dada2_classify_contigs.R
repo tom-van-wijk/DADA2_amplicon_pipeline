@@ -2,7 +2,7 @@
 
 
 # Name:		dada2_classify_contigs.R
-# Author:	Tom van Wijk - RIVM Bilthoven
+# Author:	Tom van Wijk
 # Date:		12-12-2017
 # Licence:	GNU General Public License v3.0 (copy provided in directory)
 
