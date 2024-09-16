@@ -25,7 +25,7 @@ and Illumina paired-end data are supported.<br />
 ### INSTALLATION
 
 -	Clone the DADA2_amplicon_pipeline repository to the desired location on your system.<br />
-	`git clone https://github.com/Papos92/DADA2_amplicon_pipeline.git`
+	`git clone https://github.com/tom-van-wijk/DADA2_amplicon_pipeline.git`
 -	Add the location of the DADA2_amplicon_pipeline directory to the PATH variable:<br />
 	`export PATH=$PATH:/path/to/DADA_amplicon_pipeline`<br />
 	(It is recommended to add this command to your ~/.bashrc file)
